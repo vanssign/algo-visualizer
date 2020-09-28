@@ -1,25 +1,24 @@
 import React from 'react';
-import logo from './logo.svg';
+import TimeComparision from './Components/TimeComparisionComponent';
+import Header from './Components/HeaderComponent';
+import SortingVisualizer from './Components/SortingVisualiser/SortingVisualiserComponent';
+import Pathfinding from './Components/PathfindingVisualiser/pathfinding'
+import {Route,Switch,HashRouter,Redirect} from 'react-router-dom'
 import './App.css';
 
 function App() {
   return (
+    <HashRouter>
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <Header/>
+    <Switch>
+    <Route path="/home" component={()=> <TimeComparision/>}/>
+    <Route exact path="/sorting-visualizer" component={()=> <SortingVisualizer/>}/>
+    <Route exact path="/pathfinding-visualizer" component={()=> <Pathfinding/>}/>
+    <Redirect to="/home"/>
+    </Switch>
     </div>
+    </HashRouter>
   );
 }
 

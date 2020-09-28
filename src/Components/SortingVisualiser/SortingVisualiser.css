@@ -1,0 +1,13 @@
+.btn{
+    margin:2px;
+}
+
+.array-bar {
+    width: 15px;
+    display: inline-block;
+    margin: 0 1px;
+  }
+
+  .array-container,.btn-container{
+      padding-top: 18px;
+  }
