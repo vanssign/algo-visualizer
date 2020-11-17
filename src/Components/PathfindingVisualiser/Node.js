@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './pathfinding.css';
+import './Pathfinding.css';
 
 class Node extends Component {
 	render() {
@@ -16,11 +16,20 @@ class Node extends Component {
 			onMouseEnter,
 			onMouseDown,
 			onMouseUp,
-			onTouchStart,
-			onTouchMove,
-			onTouchEnd,
 		} = this.props;
-		let startorfinish = isStart? 'node start': isFinish? 'node finish': iswall === 'true'? 'node wall': 'node';
+
+		let startorfinish;
+
+		if (isStart) {
+			startorfinish = 'node start';
+		} else if (isFinish) {
+			startorfinish = 'node finish';
+		} else if (iswall === 'true') {
+			startorfinish = 'node wall';
+		} else {
+			startorfinish = 'node';
+		}
+
 		return (
 			<div
 				id={`node-${row}-${col}`}
@@ -35,12 +44,10 @@ class Node extends Component {
 				onMouseEnter={() => onMouseEnter(row, col)}
 				onMouseDown={() => onMouseDown(node, row, col)}
 				onMouseUp={() => onMouseUp(row, col)}
-				onTouchStart={() => onTouchStart(node, row, col)}
-				onTouchMove={() => onTouchMove(row, col)}
-				onTouchEnd={() => onTouchEnd(row, col)}
 			></div>
 		);
 	}
 }
 
 export default Node;
+

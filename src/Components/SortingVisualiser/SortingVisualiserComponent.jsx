@@ -223,7 +223,7 @@ export default class SortingVisualizer extends React.Component {
       </div>
       <div><button className="btn btn-light" onClick={() => this.insertionSort()}>Insertion Sort</button></div>
        
-       <div><button className="btn btn-light" disabled onClick={() => this.selectionSort()}>Selection Sort</button></div>
+       
         <div><button className="btn btn-light" onClick={() => this.mergeSort()}>Merge Sort</button></div>
         <div><button className="btn btn-light" onClick={() => this.quickSort()}>Quick Sort</button></div>
        

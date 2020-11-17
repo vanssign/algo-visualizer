@@ -2,7 +2,7 @@ import React from 'react';
 import TimeComparision from './Components/TimeComparisionComponent';
 import Header from './Components/HeaderComponent';
 import SortingVisualizer from './Components/SortingVisualiser/SortingVisualiserComponent';
-import Pathfinding from './Components/PathfindingVisualiser/pathfinding'
+import Pathfinding from './Components/PathfindingVisualiser/Pathfinding'
 import {Route,Switch,HashRouter,Redirect} from 'react-router-dom'
 import './App.css';
 

@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import 'bootstrap/dist/css/bootstrap.min.css';
+import './Pathfinding.css';
 
 class Navbar extends Component {
 	render() {
@@ -15,11 +15,11 @@ class Navbar extends Component {
 		let disabledClear = animating ? true : false;
 		let strikeThrough = disabled ? 'strike' : '';
 		return (
-			<nav className='navbar navbar-expand-lg'>
+			<nav className='navbar'>
 				<div className='navbar-collapse'>
 					<button
 						type='button'
-						className={`btn btn-outline-dark ${strikeThrough}`}
+						className={`btn btn-outline-light ${strikeThrough}`}
 						style={buttonStyle}
 						onClick={animate}
 						disabled={disabled}
@@ -28,7 +28,7 @@ class Navbar extends Component {
 					</button>
 					<button
 						type='button'
-						className={`btn btn-outline-warning ${strikeThrough}`}
+						className={`btn btn-outline-light ${strikeThrough}`}
 						style={buttonStyle}
 						onClick={generateMaze}
 						disabled={disabled}
@@ -37,7 +37,7 @@ class Navbar extends Component {
 					</button>
 					<button
 						type='button'
-						className='btn btn-danger'
+						className='btn btn-dark'
 						style={buttonStyle}
 						onClick={() => clearPath()}
 						disabled={disabledClear}

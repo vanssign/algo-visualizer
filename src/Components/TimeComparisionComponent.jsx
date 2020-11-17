@@ -256,9 +256,9 @@ document.getElementById('time-taken-bs').innerHTML=`${t1bs-t0bs}`;
        <div className="col-6">Time Elapsed(ms)</div>
        <div className="col-6"><button className="btn btn-light" onClick={() => this.bubbleSort()}>Bubble Sort</button></div>
        <div className="col-6" id="time-taken-bs"></div>
-        <div className="col-6"><button className="btn btn-light" disabled onClick={() => this.mergeSort()}>Merge Sort</button></div>
+        <div className="col-6"><button className="btn btn-light" onClick={() => this.mergeSort()}>Merge Sort</button></div>
         <div className="col-6" id="time-taken-ms"></div>
-        <div className="col-6"><button className="btn btn-light" disabled onClick={() => this.quickSort()}>Quick Sort</button></div>
+        <div className="col-6"><button className="btn btn-light" onClick={() => this.quickSort()}>Quick Sort</button></div>
         <div className="col-6" id="time-taken-qs"></div>
         <div className="col-6"><button className="btn btn-light" onClick={() => this.insertionSort()}>Insertion Sort</button></div>
         <div className="col-6" id="time-taken-is"></div>

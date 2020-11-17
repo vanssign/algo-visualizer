@@ -1,9 +1,8 @@
 import React, { Component } from 'react';
-import Node from './node';
-import './pathfinding.css';
+import Node from './Node';
+import './Pathfinding.css';
 
 class Grid extends Component {
-	state = {};
 	render() {
 		return (
 			<div className='grid stop'>
@@ -21,26 +20,11 @@ class Grid extends Component {
 									iswall,
 									previousnode,
 								} = node;
-								const {
-									onMouseEnter,
-									onMouseDown,
-									onMouseUp,
-									onTouchStart,
-									onTouchMove,
-									onTouchEnd,
-								} = this.props;
+
+								const { onMouseEnter, onMouseDown, onMouseUp } = this.props;
+
 								return (
 									<Node
-										onMouseEnter={(row, col) => onMouseEnter(row, col)}
-										onMouseDown={(node, row, col) =>
-											onMouseDown(node, row, col)
-										}
-										onMouseUp={(row, col) => onMouseUp(row, col)}
-										onTouchStart={(node, row, col) =>
-											onTouchStart(node, row, col)
-										}
-										onTouchMove={(row, col) => onTouchMove(row, col)}
-										onTouchEnd={(row, col) => onTouchEnd(row, col)}
 										key={nodeidx}
 										row={row}
 										col={col}
@@ -51,6 +35,11 @@ class Grid extends Component {
 										node={node}
 										isStart={isStart}
 										isFinish={isFinish}
+										onMouseEnter={(row, col) => onMouseEnter(row, col)}
+										onMouseDown={(node, row, col) =>
+											onMouseDown(node, row, col)
+										}
+										onMouseUp={(row, col) => onMouseUp(row, col)}
 									/>
 								);
 							})}
@@ -63,3 +52,4 @@ class Grid extends Component {
 }
 
 export default Grid;
+
