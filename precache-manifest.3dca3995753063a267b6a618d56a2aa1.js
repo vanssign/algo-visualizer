@@ -1,31 +1,35 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "65b0c0c5340800b8eb5893dc07678d64",
+    "revision": "3cecad66aa65702858cbbcc35fd8fe5b",
     "url": "/algo-visualizer/index.html"
   },
   {
-    "revision": "e1402b23393b5eb3bc30",
+    "revision": "266aa3f7ce2244a8c8b6",
     "url": "/algo-visualizer/static/css/2.bea241d9.chunk.css"
   },
   {
-    "revision": "8190b21034299cdc416d",
-    "url": "/algo-visualizer/static/css/main.1f7b0b36.chunk.css"
+    "revision": "08a032a7440dbce0442e",
+    "url": "/algo-visualizer/static/css/main.37e40d61.chunk.css"
   },
   {
-    "revision": "e1402b23393b5eb3bc30",
-    "url": "/algo-visualizer/static/js/2.8a80425b.chunk.js"
+    "revision": "266aa3f7ce2244a8c8b6",
+    "url": "/algo-visualizer/static/js/2.198216f8.chunk.js"
   },
   {
     "revision": "26eaf80254b52f2ebcf3542565f78969",
-    "url": "/algo-visualizer/static/js/2.8a80425b.chunk.js.LICENSE.txt"
+    "url": "/algo-visualizer/static/js/2.198216f8.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "8190b21034299cdc416d",
-    "url": "/algo-visualizer/static/js/main.259170d2.chunk.js"
+    "revision": "08a032a7440dbce0442e",
+    "url": "/algo-visualizer/static/js/main.e3a1ffd9.chunk.js"
   },
   {
     "revision": "874a151889dce8261da5",
     "url": "/algo-visualizer/static/js/runtime-main.6a8f6fbe.js"
+  },
+  {
+    "revision": "ba6ebb09e78c64562cbae8e8a5f24b35",
+    "url": "/algo-visualizer/static/media/Yellow-planet-02.ba6ebb09.svg"
   },
   {
     "revision": "674f50d287a8c48dc19ba404d20fe713",
@@ -46,5 +50,13 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "fee66e712a8a08eef5805a46892932ad",
     "url": "/algo-visualizer/static/media/fontawesome-webfont.fee66e71.woff"
+  },
+  {
+    "revision": "26d85662cc91ae70af8e0b72507dd1e6",
+    "url": "/algo-visualizer/static/media/send.26d85662.svg"
+  },
+  {
+    "revision": "39bd7daa190fe67d1b21bd83ded18dbe",
+    "url": "/algo-visualizer/static/media/starting-rocket.39bd7daa.svg"
   }
 ]);
